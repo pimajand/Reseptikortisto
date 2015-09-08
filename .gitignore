@@ -1,5 +1,5 @@
-/Reseptikortisto/target/
+Reseptikortisto/target/**/*
 
-/Reseptikortisto/Reseptikortisto/private/
+Reseptikortisto/private/
 
-/Reseptikortisto/Reseptikortisto/dist/
+Reseptikortisto/dist/
