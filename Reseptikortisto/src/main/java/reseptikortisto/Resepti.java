@@ -10,36 +10,44 @@ package reseptikortisto;
  * @author pimajand
  */
 public class Resepti {
-    
-    private String nimi;
-    
-    private String getNimi;
 
-    /**
-     * Get the value of string
-     *
-     * @return the value of string
-     */
-    public String getString() {
+    private String nimi;
+    private String kuvaus;
+    private String sijainti;
+
+    public Resepti(String nimi, String kuvaus, String sijainti) {
+        this.nimi = nimi;
+        this.kuvaus = kuvaus;
+        this.sijainti = sijainti;
+    }
+
+    public String getKuvaus() {
+        return kuvaus;
+    }
+
+    public void setKuvaus(String kuvaus) {
+        this.kuvaus = kuvaus;
+    }
+
+    public String getSijainti() {
+        return sijainti;
+    }
+
+    public void setSijainti(String sijainti) {
+        this.sijainti = sijainti;
+    }
+
+    public String getNimi() {
         return nimi;
     }
 
-    /**
-     * Set the value of string
-     *
-     * @param resepti new value of string
-     */
     public void setNimi(String resepti) {
         this.nimi = resepti;
     }
+    
 
-    private String ruokalaji;
-    private String kuvaus;
-    private boolean munaton;
-    private boolean maidoton;
-    private boolean gluteeniton;
-    private String sijainti;
- 
-    
-    
+    @Override
+    public String toString() {
+        return super.toString(); //To change body of generated methods, choose Tools | Templates.
+    }
 }
